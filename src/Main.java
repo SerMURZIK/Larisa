@@ -1,7 +1,10 @@
-public class Main {
+import ru.netology.finances.Finances;
+
+class Main {
+
     public static void main(String[] args) {
-        CreditPaymentService service = new CreditPaymentService();
-        int myPayment = service.calculator(1_000_000, 9.99, 1);
-        System.out.println("Ежемесячный платеж " + myPayment + " руб.");
+        int payment = Finances.calcPayment(2600000, 200000, 2);
+        System.out.println("Ежемесячный платеж составит: " + payment);
+
     }
 }
