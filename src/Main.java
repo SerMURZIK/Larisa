@@ -1,9 +1,16 @@
-import ru.netology.finances.Finances;
-
-class Main {
-
+public class Main {
     public static void main(String[] args) {
-        int payment = Finances.calcPayment(2_600_000, 200_000, 2);
-        System.out.println("Ежемесячный платеж составит: " + payment);
+        PostManager manager = new PostManager(3);
+
+        manager.addFilm("asas");
+        manager.addFilm("asfaa");
+        manager.addFilm("asghjfghj");
+        manager.addFilm("sdfgb");
+        manager.addFilm("dfbdf");
+        manager.addFilm("oipsiodb");
+        manager.addFilm("ddfbdf");
+        manager.addFilm("awerwerwe  q");
+        manager.printFilms();
+
     }
 }
