@@ -1,3 +1,5 @@
+package first;
+
 public class PostManager {
     private Film[] films = new Film[0];
     private int countOfMaxPrint = 5;
